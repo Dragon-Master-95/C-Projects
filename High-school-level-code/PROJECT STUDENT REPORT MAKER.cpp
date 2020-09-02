@@ -70,13 +70,13 @@ for(j=1;j<lines+4;j++)
  }
 
 gotoxy(x,y);
-cputs("ษ");
+cputs("ร");
 for(i=x+1;i<l+x+1;i++)
  {
  gotoxy(i,y);
- cputs("อ");
+ cputs("ร");
  gotoxy(i,y+lines+3);
- cputs("อ");
+ cputs("ร");
  }
 gotoxy(x+1+l,y);
 cputs("");
@@ -84,12 +84,12 @@ cputs("");
 for(i=y+1;i<lines+4+y;i++)
  {
  gotoxy(x,i);
- cputs("บ");
+ cputs("ยบ");
  gotoxy(x+l+1,i);
- cputs("บ");
+ cputs("ยบ");
  }
 gotoxy(x,y+lines+3);
-cputs("ศ");
+cputs("ร");
 gotoxy(x+l+1,y+lines+3);
 cputs("1/4");
 
@@ -125,12 +125,12 @@ textcolor(BLACK);
 for(i=0;i<lines+3;i++)
  {
  gotoxy(x+l+2,i+y);
- cputs("Û");
+ cputs("ร");
  }
 for(i=1;i<l+3;i++)
  {
  gotoxy(x+i,y+lines+3);
- cputs("฿");
+ cputs("ร");
  }
 }
 
@@ -411,18 +411,18 @@ void box(int x,int y,int width,int height)
  //Draw the box
  for(i=x+1;i<x+width;i++)
   {
-  gotoxy(i,y);cputs("อ");
-  gotoxy(i,y+height);cputs("อ");
+  gotoxy(i,y);cputs("ร");
+  gotoxy(i,y+height);cputs("ร");
   }
  for(i=y+1;i<y+height;i++)
   {
-  gotoxy(x,i);cputs("บ");
-  gotoxy(x+width,i);cputs("บ");
+  gotoxy(x,i);cputs("ยบ");
+  gotoxy(x+width,i);cputs("ยบ");
   }
  //The Conners
- gotoxy(x,y);cputs("ษ");
+ gotoxy(x,y);cputs("ร");
  gotoxy(x+width,y);cputs("");
- gotoxy(x,y+height);cputs("ศ");
+ gotoxy(x,y+height);cputs("ร");
  gotoxy(x+width,y+height);cputs("1/4");
  }
 
