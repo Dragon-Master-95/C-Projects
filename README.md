@@ -1,2 +1,2 @@
-# High-school-Project-codes
-C++ codes written for projects in High School
+# C++ Projects
+My C++ related projects are in this repo.
